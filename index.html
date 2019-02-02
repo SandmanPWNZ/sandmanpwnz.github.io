@@ -2,38 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SandmanPWNZ</title>
+    <title>Guitar Tunah</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<section id="video">
-    <!--<video src="" class="bg" muted="muted" autoplay>-->
+<main class="container">
+    <div class="tuner-wrapper">
+        <div class="analyser-wrapper">
+            <canvas id="analyser">
 
-    <!--</video>-->
-</section>
-<div class="container">
-    <!--steam form-->
-    <section id="steam-section">
-        <h2>Steam Parser</h2>
-
-        <div class="form-wrapper steam">
-            <form class="form steam" id="steam-form">
-                <div class="row">
-                    <label for="steamID">
-                        Enter link to your account:
-                    </label>
-                    <input type="text" id="steamID" placeholder="76561198047015304">
-                </div>
-                <div class="row">
-                    <button class="submit-button steam" data-form-id="steam-form" type="submit">Submit</button>
-                </div>
-            </form>
-
-            <div class="steam-response">
-            </div>
+            </canvas>
         </div>
-    </section>
-</div>
-<script type="text/javascript" src="app.bundle.js"></script></body>
+        <button class="btn" id="start-tuning">Start</button>
+    </div>
+</main>
+
+<script type="module" src="main.js"></script>
+</body>
 </html>
